@@ -1,5 +1,5 @@
 terraform.tfstate.d
 .terraform/
 .kitchen/
-testing.tfvars
+terraform.tfvars
 Gemfile.lock
