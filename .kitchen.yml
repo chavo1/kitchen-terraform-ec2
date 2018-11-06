@@ -1,8 +1,6 @@
 ---
 driver:
   name: terraform
-  variable_files:
-    - testing.tfvars
 
 provisioner:
   name: terraform
@@ -10,19 +8,18 @@ provisioner:
 platforms:
   - name: ubuntu
 
-transport:
-  name: ssh
-  ssh_key: ~/.ssh/id_rsa
-
 verifier:
   name: terraform
-  format: doc
-  groups:
+  reporter: doc
+  systems:
     - name: default
+      backend: ssh
+      user: ubuntu
+      hosts_output: public_dns
+      key_files:
+       - ~/.ssh/id_rsa
       controls:
-        - operating_system
-      hostnames: public_dns
-      username: ubuntu
+      - operating_system
 
 suites:
   - name: default
