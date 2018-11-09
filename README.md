@@ -45,12 +45,12 @@ $$$$$$ Terraform v0.11.10 is supported
 -----> Setting up <default-ubuntu>...
        Finished setting up <default-ubuntu> (0m0.00s).
 -----> Verifying <default-ubuntu>...
-       Verifying host 'ec2-34-207-195-209.compute-1.amazonaws.com' of group 'remote'
+       Verifying host 'ec2-X-X-X-X.compute-1.amazonaws.com' of group 'remote'
        Loaded default
 
 Profile: default
 Version: (not specified)
-Target:  ssh://ubuntu@ec2-34-207-195-209.compute-1.amazonaws.com:22
+Target:  ssh://ubuntu@ec2-X-X-X-X.compute-1.amazonaws.com:22
 
   ✔  operating_system: Command: `lsb_release -a`
      ✔  Command: `lsb_release -a` stdout should match /Ubuntu/
