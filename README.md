@@ -18,7 +18,19 @@ The default security group on your account must allow SSH access from your IP ad
 ```
 git clone https://github.com/chavo1/kitchen-terraform-ec2.git
 ```
--   Download needed gems.
+
+- Add a needed data into the "testing.tfvars" file.
+
+```
+access_key = ""
+secret_key = ""
+key_name = ""
+region = ""
+ami = ""
+instance_type = ""
+```
+
+- Download needed gems.
 ```
 $ bundle install
 ```
