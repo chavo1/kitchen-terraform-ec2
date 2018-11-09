@@ -1,4 +1,4 @@
-# Sample repo Kitchen-Terraform with "groups" verifier
+# Sample repo - Kitchen-Terraform with "groups" verifier
 
 ## Requirments
 
