@@ -1,6 +1,6 @@
 # Sample repo - Kitchen-Terraform with "groups" verifier
 
-## Requirments1
+## Requirments
 
 Make sure you have the following prerequisites for this tutorial  
   
