@@ -9,11 +9,9 @@ provisioner:
 
 platforms:
   - name: ubuntu
-
 transport:
   name: ssh
   ssh_key: id_rsa.pem
-
 verifier:
   name: terraform
   groups:
@@ -22,6 +20,5 @@ verifier:
         - operating_system
       hostnames: public_dns
       username: ubuntu
-
 suites:
   - name: default
