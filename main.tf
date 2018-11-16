@@ -1,11 +1,17 @@
 provider "aws" {
   access_key = "${var.access_key}"
   secret_key = "${var.secret_key}"
-  region = "${var.region}"
+  region     = "${var.region}"
 }
 
 resource "aws_instance" "ec2" {
-  ami = "${var.ami}"
+  ami           = "${var.ami}"
   instance_type = "${var.instance_type}"
-  key_name = "${var.key_name}"
+  key_name      = "${var.key_name}"
+}
+
+resource "aws_instance" "ec3" {
+  ami           = "${var.ami}"
+  instance_type = "${var.instance_type}"
+  key_name      = "${var.key_name}"
 }
